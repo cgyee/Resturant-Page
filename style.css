@@ -1,0 +1,45 @@
+nav {
+    border: 1px solid aliceblue;
+    background-color: aliceblue;
+    opacity: .6;
+}
+
+body {
+    background-color: hsl(277, 34%, 37%);
+    background-image: url("Images/RPP_Hero_5694.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tab-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3vh auto;
+}
+
+.tab {
+    display: block;
+    font-size: 1.5vw;
+}
+
+#home-div {
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid hsl(277, 34%, 37%);
+    padding: 1em;
+    background-color: hsl(277, 34%, 37%);
+    opacity: .6;
+    width: 100vw;
+}
+
+#home-text {
+    text-align: center;
+    opacity: 1;
+    color: white;
+}
