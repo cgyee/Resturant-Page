@@ -18,6 +18,7 @@ const navbar = () => {
             const li = document.createElement('li');
             li.className = "tab";
             li.innerText = item;
+            li.id = item;
             ul.append(li);
         });
         nav.append(ul);

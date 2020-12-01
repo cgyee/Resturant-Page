@@ -1,9 +1,10 @@
-const renderPage = (page) => {
-    const renderArea = document.querySelector(page.renderArea());
-    while(renderArea.childNodes.length > 1){
-        renderArea.removeChild(renderArea.lastChild);
-    }
-    renderArea.append(page.render());
+
+const renderPage = (...pages) => {
+    const renderArea = document.querySelector(pages[0].renderArea());
+    renderArea.removeChild(renderArea.lastChild);
+    pages.forEach(page => {
+        renderArea.append(page.render());
+    });
 };
 
 export {renderPage};
