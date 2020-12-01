@@ -1,19 +1,25 @@
+import {updateBackground} from './helper.js';
+
 const menu = () => {
+    const bg = "menu-background";
+    
     const imgs = [
-        "img1.jpeg",
+        "im1.jpeg",
         "im2.jpeg",
         "im3.jpeg"
     ];
 
     const menuImg = "menu.jpg";
 
-    IMAGE_PATH = "./css/Images";
+    const IMAGE_PATH = "./css/Images/";
 
     const renderArea = () => {
         return "#content";
     };
 
     const render = () => {
+        updateBackground(bg);
+        
         const div = document.createElement('div');
 
         const h1 = document.createElement('h1');
@@ -42,9 +48,10 @@ const menu = () => {
         menuDiv.append(menuImage);
 
         div.append(h1, menuImgsDiv, menuDiv);
-
-
+        
+        return div;
     };
+    return {renderArea, render};
 };
 
-export {renderArea, render};
+export {menu};

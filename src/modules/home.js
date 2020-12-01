@@ -1,10 +1,15 @@
+import {updateBackground} from  './helper.js'
+
 const home = () => {
+    const bg = "home-background";
 
     const renderArea = () => {
         return "#content";
     };
 
-    const render = (content) => {
+    const render = () => {
+        updateBackground(bg);
+
         const h1 = document.createElement('h1');
 
         h1.id = "home-text";

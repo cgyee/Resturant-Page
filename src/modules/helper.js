@@ -7,4 +7,9 @@ const renderPage = (...pages) => {
     });
 };
 
-export {renderPage};
+const updateBackground = (image) => {
+    const bachGround = document.querySelector('#bg');
+    bachGround.className = image;
+}
+
+export {renderPage, updateBackground};
