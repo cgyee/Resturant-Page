@@ -1,6 +1,8 @@
 import {updateBackground, createDrinkList} from './helper.js';
 
 const drink = () => {
+    const bg = "drinks-background";
+
     const beers = {
         "typeOf": [
             "Craft Beer",
@@ -62,8 +64,12 @@ const drink = () => {
     };
 
     const render = () => {
+        updateBackground(bg);
+
         const div = document.createElement('div');
-        div.className = "drinks"
+
+        const divDrinks = document.createElement('div');
+        divDrinks.className = "drinks";
 
         const h1 = document.createElement("h1");
         h1.textContent = "Drinks";
@@ -71,7 +77,9 @@ const drink = () => {
         const b = createDrinkList(beers);
         const liq = createDrinkList(liquors);
         
-        div.append(b, liq);
+        divDrinks.append(b, liq);
+
+        div.append(h1, divDrinks);
 
         return div;
     };

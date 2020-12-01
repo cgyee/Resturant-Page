@@ -21,7 +21,7 @@ const createDrinkList = (drinksObj) => {
 
         drinksObj[drinkType].forEach(drink => {
         const thisDrink = document.createElement('p');
-
+        thisDrink.className = "drinks-text";
         thisDrink.textContent = drink;
         
         pDiv.append(thisDrink);
