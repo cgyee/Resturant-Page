@@ -24,7 +24,7 @@ const menu = () => {
 
         const h1 = document.createElement('h1');
         h1.className = "menu-text";
-        h1.innerText = "Food Menu";
+        h1.textContent = "Food Menu";
 
         const bachGround = document.querySelector('#bg');
         bachGround.className = "menu-background";

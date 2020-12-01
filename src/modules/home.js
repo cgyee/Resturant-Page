@@ -14,7 +14,7 @@ const home = () => {
 
         h1.id = "home-text";
 
-        h1.innerText = "The Royal Pig Pub";
+        h1.textContent = "The Royal Pig Pub";
         
         return h1;
     };
