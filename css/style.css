@@ -45,6 +45,18 @@ h1 {
     font-family: headerText;
 }
 
+h3 {
+    font-family: headerText;
+    color: rgb(102, 62, 126);
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    font-family: regularText;
+    text-align: center;
+}
+
 .tab-bar {
     display: flex;
     flex-direction: row;
@@ -78,4 +90,17 @@ h1 {
     width: 30vw;
     height: 40vh;
     margin: 0 1rem;   
+ }
+
+ .drinks {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10% auto;
+ }
+
+ .drinks-list {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
  }
