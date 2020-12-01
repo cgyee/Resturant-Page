@@ -10,7 +10,6 @@
 
 html {
     background-color: hsl(0, 0%, 100%);
-    background-image: url("./Images/RPP_Hero_5694.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -18,11 +17,15 @@ html {
 
 }
 
+.home-background {
+    background-image: url("./Images/RPP_Hero_5694.jpg");
+}
+
 .menu-background {
     background-image: url("./Images/surfnturf.jpg");
     background-position: 0 5%;
     background-position: center top;
-    background-size: 100vw 55vh;
+    background-size: 100vw 60vh;
 }
 
 nav {
@@ -72,7 +75,7 @@ h1 {
 }
 
  .menu-img {
-    width: 26vw;
-    height: 26vh;
+    width: 30vw;
+    height: 40vh;
     margin: 0 1rem;   
  }
