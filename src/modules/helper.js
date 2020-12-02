@@ -1,15 +1,21 @@
 
+
+//function takes in one or serveral pages '...pages' passes an array containing all arguements
 const renderPage = (...pages) => {
+    //We need to get the id of where we want to render our page
     const renderArea = document.querySelector(pages[0].renderArea());
+
+    //Removes previous Node but keeps NavBar
     renderArea.removeChild(renderArea.lastChild);
     pages.forEach(page => {
         renderArea.append(page.render());
     });
 }
 
+//function handles the creations of drink.js related divs that could be repurposed for possible menu.js use
 const createDrinkList = (drinksObj) => {
     const div = document.createElement('div');
-    div.className = "drinks-list"
+    div.className = "drinks-list";
 
     drinksObj.typeOf.forEach(drinkType => {
 
@@ -33,6 +39,7 @@ const createDrinkList = (drinksObj) => {
     return div;
 }
 
+//function changes the background class based on the arguement passed
 const updateBackground = (image) => {
     const bachGround = document.querySelector('#bg');
     bachGround.className = image;
